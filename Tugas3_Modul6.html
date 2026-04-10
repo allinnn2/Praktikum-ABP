@@ -1,0 +1,47 @@
+<!-- Alifatus Shabrina Amalia
+2311102225 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The jQuery Example</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // Bagian 1: Test Hello World 
+            // document.write("Hello, World!"); 
+
+            // Bagian 6.6.1: Hide/Show [cite: 10]
+            $("#hide").click(function() {
+                $("p.target").hide();
+            });
+            $("#show").click(function() {
+                $("p.target").show();
+            });
+
+            // Bagian 6.6.2: Animasi [cite: 14]
+            $("#start").click(function() {
+                $("div").animate({
+                    height: 'toggle'
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <p class="target">If you click on the "Hide" button, I will disappear.</p>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+
+    <hr>
+
+    <p>Click the button multiple times to toggle the animation.</p>
+    <button id="start">Start Animation</button>
+    
+    <div style="background: #98bf21; height:100px; width:100px; position:absolute; margin-top:20px;">
+    </div>
+
+</body>
+</html>
